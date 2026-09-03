@@ -1,3 +1,12 @@
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# VS Code local settings
+.vscode/
+
 #.gitignore file tells Git which files and folders to ignore (not track).
 # This is useful for keeping log files, temporary files, build artifacts, or personal files out of your repository.
 # Use when
