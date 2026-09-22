@@ -29,30 +29,167 @@
     </script>
 
     <div class="container-fluid text-center">
-      <h1><span class="border border-primary border-4">Hello World</span></h1>
-      <p>This is the main paragraph that will be for my website</p>
+      <h1><span class="border border-primary border-4">HTML, Bootstrap & CSS3</span></h1>
     </div>
 
-    <img
-      src="images/bootstraplogo2.png"
-      class="img-fluid"
-      alt="This picture is of a bootstrap logo that is of a different angle"
-    />
+    <!--CARDS START HERE-->
+    <div class="container my-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/bootstrapmainlogo.png"
+              class="card-img-top"
+              alt="Bootstrap 5 Logo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap 5</h5>
+              <p class="card-text">
+                Bootstrap is a free and open-source CSS framework directed at
+                responsive, mobile-first front-end web development. It contains
+                CSS- and JavaScript-based design templates for typography,
+                forms, buttons, navigation, and other interface components.
+              </p>
+              <a href="https://getbootstrap.com/" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/html5mainlogo.png"
+              class="card-img-top"
+              alt="HTML5 Logo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HTML5</h5>
+              <p class="card-text">
+                HTML5 is a markup language for structuring and presenting content on the World Wide Web. It is the fifth and current version of the HTML standard.
+              </p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/css3mainlogo.png"
+              class="card-img-top"
+              alt="CSS3 Logo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">CSS3</h5>
+              <p class="card-text">
+                CSS3 is the latest version of the Cascading Style Sheets language. It is used for styling and layout of web pages.
+              </p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!--CARDS END HERE-->
+
+
     <br />
 
-    <a
-      href="https://tv.apple.com/us/show/mr-robot/umc.cmc.306sepo05euzg2r68zzsa02up"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Watch Mr.Robot on Apple TV
-    </a>
+    <!--BOOTSTRAP CAROUSEL STARTS HERE-->
+    <div class="container">
+      <div
+        id="logocarousel"
+        class="carousel slide w-50 mx-auto border border-secondary border-4 rounded"
+        data-bs-ride="false"
+        data-bs-theme="dark"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#logocarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#logocarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#logocarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <!--BOOTSTRAP CAROUSEL ENDS HERE -->
 
-    <br />
+        <!--BOOSTRAP CAROUSEL IMAGES START HERE-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/bootstrapmainlogo.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel-caption position-static pb-5 d-block d-md-block"
+            >
+              <h5>Bootstrap5</h5>
+              <p>This is the bootstrap 5 logo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/html5mainlogo.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel-caption position-static pb-5 d-block d-md-block"
+            >
+              <h5>HTML5 LOGO</h5>
+              <p>This is the HTML5 logo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/css3mainlogo.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel-caption position-static pb-5 d-block d-md-block"
+            >
+              <h5>CSS3 LOGO</h5>
+              <p>This is the CSS3 logo.</p>
+            </div>
+          </div>
+        </div>
+        <!--BOOSTRAP CAROUSEL IMAGES END HERE-->
 
-    <img
-      src="images/bootstrap.png"
-      class="img-fluid"
-      alt="The picture is of the bootstrap logo"
-    />
+        <!--BOOSTRAP CONTROLS START HERE-->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#logocarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#logocarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!--BOOSTRAP CONTROLS END HERE-->
+      </div>
+    </div>
   </body>
 </html>
